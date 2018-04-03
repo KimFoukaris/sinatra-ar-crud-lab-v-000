@@ -1,7 +1,7 @@
 <p>Blog Title: <%=@post.name%></p>
 <p>Blog Content: <%=@post.content%></p>
 
-<form method="post" action="/models/<%=post.id%>/delete">
-    <input id="hidden" type="hidden" name="_method" value="DELETE"
-    <input type="submit" value="delete">
+<form method="post" action="/models/<%= post.id %>/delete">
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="delete">
 </form>
