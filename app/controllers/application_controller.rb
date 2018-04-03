@@ -41,7 +41,7 @@ class ApplicationController < Sinatra::Base
     binding.pry
     @post=Post.find(params[:id])
     @post2 = Post.update(params[:id], params[:name], params[:content])
-
+    binding.pry
     erb :show
   end
 
